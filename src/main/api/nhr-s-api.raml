@@ -1,0 +1,34 @@
+#%RAML 1.0
+version: v1
+title: NHR S-API
+mediaType: application/json
+protocols: [ HTTP, HTTPS ]
+baseUri: http://localhost:9003/api/nhr-s-api/{version}/
+uses:
+  dt: libraries/data_types_library.raml
+  tr: libraries/traits_library.raml
+
+/patients:
+  is: [tr.common_error_traits]
+  displayName: Patient
+  description: |
+    Retrieve patient's information from NHR records
+  get:
+    description: |
+      Query the FDA for particular drugs
+    queryParameters:
+      filter[taxCode]:
+        type: string
+        required: true
+        minLength: 16
+        maxLength: 16
+        example: 'RSSMRA70A01L378C'
+        description: |
+          Tax code
+    responses:
+      200:
+        description: ok
+        body:
+          application/json:
+            type: dt.get_patient
+            example: !include example/get_patient.json
