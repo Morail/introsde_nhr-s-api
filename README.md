@@ -1,6 +1,6 @@
 # Introduction
 
-The API for the [NHR mock system](https://github.com/Morail/introsde_project_ws_nhr) are developed to query the database for retrieving info about recorded patients.
+API designed for interoperate with the [NHR mock system](https://github.com/Morail/introsde_project_ws_nhr). These APIs are developed to query a Web Services which retrieves data about recorded patients from its database.
 
 # Description
 
