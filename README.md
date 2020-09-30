@@ -1,6 +1,6 @@
 # Introduction
 
-API designed for interoperate with the [NHR mock system](https://github.com/Morail/introsde_project_ws_nhr). These APIs are developed to query a Web Services which retrieves data about recorded patients from its database.
+API designed for interoperate with the National Health Service (NHS) [mock system](https://github.com/Morail/introsde_project_ws_nhs). These APIs are developed to query a Web Services which retrieves data about recorded patients from its database.
 
 # Description
 
